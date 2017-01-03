@@ -4,7 +4,8 @@
   "description": "Shaving yaks using Angular 1.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/markhobson/yak-angular1/issues"
   },
-  "homepage": "https://github.com/markhobson/yak-angular1#readme"
+  "homepage": "https://github.com/markhobson/yak-angular1#readme",
+  "dependencies": {
+    "angular": "^1.6.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.1.0"
+  }
 }
