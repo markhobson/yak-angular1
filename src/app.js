@@ -19,4 +19,10 @@ angular.module('yak', [])
 		bindings: {
 			yaks: '<'
 		}
+	})
+	.component('yakItem', {
+		templateUrl: 'src/yakItem.html',
+		bindings: {
+			yak: '<'
+		}
 	});

@@ -1,4 +1,6 @@
 <h2>Yaks</h2>
 <ul>
-	<li ng-repeat="yak in $ctrl.yaks">{{yak}}</li>
+	<li ng-repeat="yak in $ctrl.yaks">
+		<yak-item yak="yak"></yak-item>
+	</li>
 </ul>
