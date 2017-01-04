@@ -14,8 +14,8 @@ angular.module('yak', [])
 			onAdd: '&'
 		}
 	})
-	.component('yaks', {
-		templateUrl: 'src/yaks.html',
+	.component('yakList', {
+		templateUrl: 'src/yakList.html',
 		bindings: {
 			yaks: '<'
 		}
