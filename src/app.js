@@ -3,13 +3,18 @@ angular.module('yak', [])
 		templateUrl: 'src/app.html',
 		controller: function() {
 			this.yaks = [];
-			this.addYak = function(name) {
-				this.yaks.push(name);
+			this.addYak = function(yak) {
+				this.yaks.push(yak);
 			}
 		}
 	})
 	.component('addYakForm', {
 		templateUrl: 'src/addYakForm.html',
+		controller: function() {
+			this.yak = function() {
+				return {name: this.name};
+			};
+		},
 		bindings: {
 			onAdd: '&'
 		}
