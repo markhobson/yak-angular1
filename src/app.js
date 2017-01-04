@@ -8,8 +8,8 @@ angular.module('yak', [])
 			}
 		}
 	})
-	.component('addYak', {
-		templateUrl: 'src/addYak.html',
+	.component('addYakForm', {
+		templateUrl: 'src/addYakForm.html',
 		bindings: {
 			onAdd: '&'
 		}
