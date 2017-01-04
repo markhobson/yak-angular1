@@ -1,6 +1,6 @@
 <h2>Yaks</h2>
 <ul>
-	<li ng-repeat="yak in $ctrl.yaks">
+	<li ng-repeat="yak in $ctrl.yaks track by $index">
 		<yak-item yak="yak"></yak-item>
 	</li>
 </ul>
