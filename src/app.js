@@ -2,8 +2,9 @@ angular.module('yak', [])
 	.component('app', {
 		templateUrl: 'src/app.html',
 		controller: function() {
+			this.yaks = [];
 			this.addYak = function(name) {
-				console.log('Add yak: ' + name);
+				this.yaks.push(name);
 			}
 		}
 	})
@@ -11,5 +12,11 @@ angular.module('yak', [])
 		templateUrl: 'src/addYak.html',
 		bindings: {
 			onAdd: '&'
+		}
+	})
+	.component('yaks', {
+		templateUrl: 'src/yaks.html',
+		bindings: {
+			yaks: '<'
 		}
 	});
